@@ -9,7 +9,7 @@ struct Inventory {
 
 void tambahBarang() {
  struct Inventory brg;
- scanf("%s", brg.namaItem);
+ scanf("%[^\n]s", brg.namaItem);
  scanf("%d", &brg.qtyItem);
  scanf("%lld", &brg.hargaJual);
  FILE *fp = fopen("inventory.txt", "a");
